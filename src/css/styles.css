@@ -189,15 +189,14 @@ header .menu .wrapper .top-nav ul {
 header .menu .wrapper .top-nav ul:after {
   content: "";
   display: block;
-  border-color: transparent #ff8c8c;
+  border-color: #eb4f4e #eb4f4e #ff8c8c #ff8c8c;
   border-style: solid;
-  border-width: 32px 32px 32px 0px;
+  border-width: 22px 22px 22px 22px;
   height: 0px;
   width: 0px;
-  transform: rotate(-45deg);
   position: absolute;
   top: 0;
-  right: 16px;
+  right: 0;
 }
 
 header .menu .wrapper .top-nav ul:before {
