@@ -98,16 +98,38 @@ header
 		background-color: $top-header-bg-color
 		text-align: center
 		color: #fff
+		padding-bottom: 5 * $size
 
 		h1
 			font-size: 4rem
 			font-weight: bold
 			letter-spacing: 5px
-			padding-top: 5 * $size
+			padding-top: 3 * $size
 
 		span
 			padding: 1.5 * $size
 			display: block
 			font-weight: bold
 			letter-spacing: 2px
+
+		.owl-carousel
+			margin-top: $size
+			position: relative
+
+			img
+				max-width: 70%
+				margin: 0 auto
+
+			.owl-nav
+				.owl-prev
+					position: absolute
+					top: 45%
+
+				.owl-next
+					position: absolute
+					right: 0
+					top: 45%
+
+			.owl-dots
+				display: none
 

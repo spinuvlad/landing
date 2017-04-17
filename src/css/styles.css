@@ -237,13 +237,14 @@ header section.top-header {
   background-color: #eb4f4e;
   text-align: center;
   color: #fff;
+  padding-bottom: 50px;
 }
 
 header section.top-header h1 {
   font-size: 4rem;
   font-weight: bold;
   letter-spacing: 5px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 header section.top-header span {
@@ -251,6 +252,31 @@ header section.top-header span {
   display: block;
   font-weight: bold;
   letter-spacing: 2px;
+}
+
+header section.top-header .owl-carousel {
+  margin-top: 10px;
+  position: relative;
+}
+
+header section.top-header .owl-carousel img {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+header section.top-header .owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: 45%;
+}
+
+header section.top-header .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: 0;
+  top: 45%;
+}
+
+header section.top-header .owl-carousel .owl-dots {
+  display: none;
 }
 
 @media screen and (max-width: 1100px) {
