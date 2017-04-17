@@ -114,6 +114,56 @@ img {
   margin: 0 auto;
 }
 
+@font-face {
+  src: url("../fonts/Bariol-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Bariol-Regular.woff") format("woff"), url("../fonts/Bariol-Regular.ttf") format("truetype"), url("../fonts/Bariol-Regular.svg#Bariol-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-family: Bariol-Regular;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: Bariol-Regular;
+}
+
+header .menu {
+  background-color: #f66262;
+  height: 110px;
+  color: #fff;
+}
+
+header .menu .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+header .menu .wrapper .logo {
+  box-sizing: border-box;
+  margin-left: 5px;
+  margin-right: 5px;
+  word-wrap: break-word;
+  width: calc(41.66666666666667% - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+header .menu .wrapper .logo h1 {
+  font-size: 2.3rem;
+  text-shadow: 0 1px 1px #c34b2a;
+  letter-spacing: 4px;
+}
+
+header .menu .wrapper .logo span {
+  font-size: 17px;
+}
+
 @media screen and (max-width: 1100px) {
   .wrapper {
     padding-left: 30px;
