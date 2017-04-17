@@ -131,15 +131,13 @@ body {
 
 header .menu {
   background-color: #f66262;
-  height: 110px;
   color: #fff;
 }
 
 header .menu .wrapper {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -5px;
-  margin-right: -5px;
+  align-items: center;
+  height: 110px;
 }
 
 header .menu .wrapper .logo {
@@ -148,20 +146,53 @@ header .menu .wrapper .logo {
   margin-right: 5px;
   word-wrap: break-word;
   width: calc(41.66666666666667% - 10px);
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -5px;
-  margin-right: -5px;
 }
 
-header .menu .wrapper .logo h1 {
-  font-size: 2.3rem;
+header .menu .wrapper .logo .img_logo {
+  display: flex;
+  margin-bottom: 6px;
+}
+
+header .menu .wrapper .logo .img_logo h1 {
+  align-self: flex-end;
+  font-size: 2.2rem;
+  letter-spacing: 3px;
   text-shadow: 0 1px 1px #c34b2a;
-  letter-spacing: 4px;
+  margin: 0 0 -6px 8px;
 }
 
 header .menu .wrapper .logo span {
-  font-size: 17px;
+  font-size: 1.19rem;
+}
+
+header .menu .wrapper .top-nav {
+  box-sizing: border-box;
+  margin-left: 5px;
+  margin-right: 5px;
+  word-wrap: break-word;
+  width: calc(58.333333333333336% - 10px);
+}
+
+header .menu .wrapper .top-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .menu .wrapper .top-nav ul li a:link,
+header .menu .wrapper .top-nav ul li a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  display: block;
+  padding: 7px 10px;
+}
+
+header .menu .wrapper .top-nav ul li a:hover,
+header .menu .wrapper .top-nav ul li a.active {
+  background-color: #232324;
+  border-radius: 3px;
+  transition: .3s;
 }
 
 @media screen and (max-width: 1100px) {

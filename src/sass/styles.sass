@@ -18,24 +18,52 @@ body
 	font-family: $base-font
 
 header
-
 	.menu
-		background-color: #f66262
-		height: 11 * $size
+		background-color: $menu-bg-color
 		color: #fff
 
-		.wrapper
-			+row-flex()
+		.wrapper 
+			display: flex
+			align-items: center
+			height: 11 * $size
 
 			.logo
 				+col()
 				+col-10()
-				+row-flex()
 
-				h1
-					font-size: 2.3rem
-					text-shadow: 0 1px 1px #c34b2a;
-					letter-spacing: 4px
+				.img_logo 
+					display: flex
+					margin-bottom: 6px
+
+					h1
+						align-self: flex-end
+						font-size: 2.2rem
+						letter-spacing: 3px
+						text-shadow: 0 1px 1px #c34b2a
+						margin: 0 0 -6px 8px
 
 				span
-					font-size: 17px
+					font-size: 1.19rem
+
+			.top-nav
+				+col()
+				+col-14()
+
+				ul
+					display: flex
+					+justify-content(space-between)
+
+					li
+						a:link, a:visited
+							text-decoration: none
+							color: #fff
+							font-family: Arial
+							font-weight: bold
+							display: block
+							padding: 7px 10px
+						a:hover, a.active
+							background-color: $menu-hover-color
+							border-radius: 3px
+							transition: .3s
+
+
