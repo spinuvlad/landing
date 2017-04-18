@@ -178,6 +178,10 @@ header .menu .wrapper .top-nav {
   width: calc(58.333333333333336% - 10px);
 }
 
+header .menu .wrapper .top-nav .togleMenu {
+  display: none;
+}
+
 header .menu .wrapper .top-nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -296,6 +300,32 @@ header section.top-header .owl-carousel .owl-dots {
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  header .menu .wrapper .logo {
+    width: calc(25% - 10px);
+  }
+
+  header .menu .wrapper .logo .img_logo h2 {
+    font-size: 1.5rem;
+  }
+
+  header .menu .wrapper .logo span {
+    font-size: 1rem;
+  }
+
+  header .menu .wrapper .top-nav {
+    width: calc(75% - 10px);
+  }
+
+  header .menu .wrapper .top-nav ul li a:link,
+  header .menu .wrapper .top-nav ul li a:visited {
+    padding: 5px 7px;
+    font-size: 0.8rem;
+  }
+
+  header section.top-header h1 {
+    font-size: 3rem;
   }
 }
 
