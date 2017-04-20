@@ -4,7 +4,8 @@
 
 
 +reset()
-
+//.grid_debug
+	//+debug(rgba(0, 0, 0, 0.5), 1px solid green)
 
 .wrapper
 	+wrapper()
@@ -169,5 +170,39 @@ header
 			.owl-dots
 				display: none
 
-main.design
-	background-color: #fff
+.design
+	background-color: $design-bg-color
+	text-align: center
+
+	&-title
+		font-size: 2.5rem
+		font-weight: bold
+		color: #fff
+		letter-spacing: $size
+		padding-top: 4 * $size
+
+	&-subtitle
+		color: $design-red-color
+		padding: $size
+		font-size: 1.3rem
+		letter-spacing: 3px
+
+	&-items
+		+row-flex()
+		justify-content: space-around
+
+		&-item
+			+col()
+			+col-7()
+			color: white
+
+			.title
+				font-size: 2rem
+				font-weight: 400
+
+			.subtitle
+				font-size: 1.3rem
+				color: $design-red-color
+
+.height
+	height: 700px
