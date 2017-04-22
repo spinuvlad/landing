@@ -212,6 +212,70 @@ header
 				color: $design-red-color
 
 
+.human
+	background-color: $human-bg-color
+	text-align: center
+	padding-bottom: 2.5 * $size
+
+	&-title
+		font-size: 2.5rem
+		font-weight: bold
+		color: #fff
+		letter-spacing: 10px
+		padding-top: 4 * $size
+
+	&-subtitle
+		color: $human-darkgreen-color
+		font-size: 1.2rem
+		font-weight: bold
+		letter-spacing: 2px
+		padding: 2 * $size
+
+	&-items
+		+row-flex()
+
+		&-item
+			+row-flex()
+			flex-direction: column
+			justify-content: center
+			background-color: #fff
+			border-radius: 5px
+			+col()
+			+col-6()
+
+			.img
+				margin: 10px auto
+				margin-top: 20px
+				background-color: $human-bg-color
+				border-radius: 50%
+				box-shadow: 0 1px 1px rgba(255, 255, 255, 0.15), inset 0 1px 1px rgba(0, 0, 0, 0.4)
+				
+				img
+					padding: 9px 8px 3px 8px
+
+			.name
+				font-size: 1.5rem
+				font-weight: bold
+				text-shadow: 0 1px 1px #ffffff, 0 0 35px rgba(243, 255, 251, 0.15)
+				color: #61af66
+
+			.description
+				font-size: 1.2rem
+				font-weight: bold
+				text-shadow: 0 1px 1px #ffffff, 0 0 35px rgba(243, 255, 251, 0.15)
+				color: #e74c3c
+				padding: 10px 0 5px 0
+
+			.btn
+				background-color: $human-bg-color
+				margin: 10px auto
+				color: #fff
+
+					
+
+
+
+
 
 
 
