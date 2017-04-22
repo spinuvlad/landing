@@ -11,7 +11,7 @@ $(function(){
 	});
 
 //https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html
-$('.owl-carousel').owlCarousel({
+$('.slider-1').owlCarousel({
     loop:true,
     margin:10,
     autoplay:true,
@@ -29,6 +29,30 @@ $('.owl-carousel').owlCarousel({
         },
         1000:{
             items:1,
+            nav:true,
+            loop:true
+        }
+    }
+});
+
+$('.slider-2').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    nav:true,
+    navText: [""],
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:true
+        },
+        1000:{
+            items:4,
             nav:true,
             loop:true
         }
