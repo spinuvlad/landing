@@ -294,6 +294,41 @@ header
 					letter-spacing: 3px
 					margin: 0 auto
 
+.appl
+	background-color: rgba(236, 236, 236, 0.8)
+	text-align: center
+
+	&-title
+		font-size: 2.7rem
+		font-weight: bold
+		color: #616161
+		letter-spacing: 9px
+		padding-top: 3 * $size
+		+xs(font-size, 2rem)
+		+xxs(letter-spacing, 5px)
+
+	&-subtitle
+		color: #61af66
+		font-size: 20px
+		font-weight: 400
+		letter-spacing: 1px
+		padding: 1 * $size
+
+	&-slider
+		margin-top: 20px
+		+row-flex()
+
+		.item
+			+col()
+			//+col-24()
+			+offset(1)
+
+			.title
+				color: #232324
+				font-weight: bold
+				font-size: 21px
+				padding: 20px 0
+
 					
 
 
