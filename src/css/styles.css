@@ -467,13 +467,22 @@ header section.top-header .owl-carousel .owl-dots {
   margin-right: -5px;
 }
 
+.appl-slider .owl-nav .owl-prev {
+  position: absolute;
+  top: 45%;
+}
+
+.appl-slider .owl-nav .owl-next {
+  position: absolute;
+  right: 0;
+  top: 45%;
+}
+
 .appl-slider .item {
   box-sizing: border-box;
   margin-left: 5px;
   margin-right: 5px;
   word-wrap: break-word;
-  margin-left: calc(4.16667% + 5px);
-  margin-right: calc(4.16667% + 5px);
 }
 
 .appl-slider .item .title {

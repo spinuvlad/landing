@@ -37,10 +37,10 @@ $('.slider-1').owlCarousel({
 
 $('.slider-2').owlCarousel({
     loop:true,
-    margin:10,
+    margin:30,
     autoplay:true,
     nav:true,
-    navText: [""],
+    //navText: [""],
     responsiveClass:true,
     responsive:{
         0:{

@@ -317,11 +317,18 @@ header
 	&-slider
 		margin-top: 20px
 		+row-flex()
+		.owl-nav
+			.owl-prev
+				position: absolute
+				top: 45%
+
+			.owl-next
+				position: absolute
+				right: 0
+				top: 45%
 
 		.item
 			+col()
-			//+col-24()
-			+offset(1)
 
 			.title
 				color: #232324
