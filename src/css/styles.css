@@ -342,7 +342,6 @@ header section.top-header .owl-carousel .owl-dots {
 .human {
   background-color: #6cc372;
   text-align: center;
-  padding-bottom: 25px;
 }
 
 .human-title {
@@ -366,6 +365,7 @@ header section.top-header .owl-carousel .owl-dots {
   flex-wrap: wrap;
   margin-left: -5px;
   margin-right: -5px;
+  justify-content: space-around;
 }
 
 .human-items-item {
@@ -377,6 +377,7 @@ header section.top-header .owl-carousel .owl-dots {
   justify-content: center;
   background-color: #fff;
   border-radius: 5px;
+  margin-bottom: 1.5rem;
   box-sizing: border-box;
   margin-left: 5px;
   margin-right: 5px;
@@ -404,6 +405,7 @@ header section.top-header .owl-carousel .owl-dots {
 }
 
 .human-items-item .description {
+  flex-grow: 1;
   font-size: 1.2rem;
   font-weight: bold;
   text-shadow: 0 1px 1px #ffffff, 0 0 35px rgba(243, 255, 251, 0.15);
@@ -412,9 +414,26 @@ header section.top-header .owl-carousel .owl-dots {
 }
 
 .human-items-item .btn {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
   background-color: #6cc372;
   margin: 10px auto;
   color: #fff;
+  width: 80%;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+.human-items-item .btn .fa-twitter {
+  font-size: 2.3rem;
+}
+
+.human-items-item .btn span {
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  margin: 0 auto;
 }
 
 .height {
@@ -474,6 +493,10 @@ header section.top-header .owl-carousel .owl-dots {
 
   .design-items-item {
     width: calc(41.66666666666667% - 10px);
+  }
+
+  .human-items-item {
+    width: calc(45.833333333333336% - 10px);
   }
 }
 
@@ -536,5 +559,9 @@ header section.top-header .owl-carousel .owl-dots {
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .human-items-item {
+    width: calc(75% - 10px);
   }
 }
