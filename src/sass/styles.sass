@@ -173,13 +173,14 @@ header
 .design
 	background-color: $design-bg-color
 	text-align: center
+	padding: 4 * $size 0 3 * $size 0
 
 	&-title
 		font-size: 2.5rem
 		font-weight: bold
 		color: #fff
 		letter-spacing: $size
-		padding-top: 4 * $size
+		+xs(font-size, 2.2rem)
 
 	&-subtitle
 		color: $design-red-color
@@ -195,14 +196,29 @@ header
 			+col()
 			+col-7()
 			color: white
+			+col-sm-10()
+			+col-xs-20()
+
+			.img
+				margin-top: 3 * $size
 
 			.title
 				font-size: 2rem
 				font-weight: 400
+				padding: 1.5 * $size 0 1.5 * $size 0 
 
 			.subtitle
-				font-size: 1.3rem
+				font-size: 1.2rem
 				color: $design-red-color
+
+
+
+
+
+
+
+
+
 
 .height
 	height: 700px
