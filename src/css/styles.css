@@ -365,7 +365,7 @@ header section.top-header .owl-carousel .owl-dots {
   flex-wrap: wrap;
   margin-left: -5px;
   margin-right: -5px;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .human-items-item {
@@ -377,7 +377,7 @@ header section.top-header .owl-carousel .owl-dots {
   justify-content: center;
   background-color: #fff;
   border-radius: 5px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   box-sizing: border-box;
   margin-left: 5px;
   margin-right: 5px;
@@ -418,6 +418,7 @@ header section.top-header .owl-carousel .owl-dots {
   flex-wrap: wrap;
   margin-left: -5px;
   margin-right: -5px;
+  text-decoration: none;
   background-color: #6cc372;
   margin: 10px auto;
   color: #fff;
@@ -553,6 +554,10 @@ header section.top-header .owl-carousel .owl-dots {
   .design-items-item {
     width: calc(83.33333333333334% - 10px);
   }
+
+  .human-title {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -561,7 +566,11 @@ header section.top-header .owl-carousel .owl-dots {
     padding-right: 15px;
   }
 
+  .human-title {
+    letter-spacing: 5px;
+  }
+
   .human-items-item {
-    width: calc(75% - 10px);
+    width: calc(83.33333333333334% - 10px);
   }
 }

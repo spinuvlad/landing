@@ -222,6 +222,8 @@ header
 		color: #fff
 		letter-spacing: 10px
 		padding-top: 4 * $size
+		+xs(font-size, 2rem)
+		+xxs(letter-spacing, 5px)
 
 	&-subtitle
 		color: $human-darkgreen-color
@@ -232,7 +234,7 @@ header
 
 	&-items
 		+row-flex()
-		justify-content: space-around
+		justify-content: center
 
 
 		&-item
@@ -241,11 +243,11 @@ header
 			justify-content: center
 			background-color: #fff
 			border-radius: 5px
-			margin-bottom: 1.5rem
+			margin-bottom: 1rem
 			+col()
 			+col-6()
 			+col-sm-11()
-			+col-xxs-18()
+			+col-xxs-20()
 
 
 			.img
@@ -274,6 +276,7 @@ header
 
 			.btn
 				+row-flex()
+				text-decoration: none
 				background-color: $human-bg-color
 				margin: 10px auto
 				color: #fff
