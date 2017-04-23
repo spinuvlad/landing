@@ -469,13 +469,13 @@ header section.top-header .owl-carousel .owl-dots {
 
 .appl-slider .owl-nav .owl-prev {
   position: absolute;
-  top: 45%;
+  top: 28%;
 }
 
 .appl-slider .owl-nav .owl-next {
   position: absolute;
   right: 0;
-  top: 45%;
+  top: 28%;
 }
 
 .appl-slider .item {
