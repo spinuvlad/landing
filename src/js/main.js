@@ -40,28 +40,23 @@ $('.slider-2').owlCarousel({
     nav:true,
     margin:30,
     autoplay:true,
-    navText: ["<i class='fa fa-angle-left fa-4x'></i>", "<i class='fa fa-angle-right fa-4x'></i>"],
+    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
     responsiveClass:true,
     responsive:{
         0:{
             items:1,
             nav:true
         },
-        400:{
+        500:{
             items:2,
             nav:true
         },
 
         800:{
-            items:4,
+            items:3,
             nav:true
         },
 
-        1000:{
-            items:4,
-            nav:true,
-            loop:true
-        }
     }
 });
 
