@@ -11,6 +11,7 @@
 	+wrapper()
 
 +font-face("../fonts/", $base-font)
++font-face("../fonts/", $price-font)
 
 html
 	font-size: 15px
@@ -317,6 +318,7 @@ header
 	&-slider
 		margin-top: 20px
 		+row-flex()
+		padding-bottom: 170px
 
 		.owl-nav
 			.owl-prev
@@ -349,7 +351,116 @@ header
 				font-size: 21px
 				padding: 20px 0
 
+.orders
+	text-align: center
+	margin-top: -130px
+
+	.container
+		+row-flex()
+		justify-content: space-between
+		align-items: flex-end
+	
+		.order._mod
+			.title
+				color: #eb4f4e
+			.subtitle
+				color: #232324
+
+			.order-price
+				background-color: #eb4f4e
+
+				.order-btn
+					color: #eb4f4e
+
+					a:hover
+						background-color: #616161
+
+		.order
+			background-color: #fff
+			border-radius: 4px
+			+col()
+			+col-8()
+
+
+			.title
+				font-size: 40px
+				letter-spacing: 3px
+				padding: 10px 0
+				+sm(font-size, 32px)
+
+			.subtitle
+				font-size: 20px
+				color: #eb4f4e
+				font-weight: bold
+				letter-spacing: 2px
+				padding-bottom: 20px
+
+			.order-menu
+				background-color: #f0f0f0
+				font-size: 18px
+
+				li:not(:last-child)
+					border-bottom: none
+
+				li
+					border: 1px solid silver
 					
+
+					a:link, a:visited
+						text-decoration: none
+						padding: 10px
+						display: block
+						color: #616161
+
+					a:hover
+						background-color: #616161
+						color: #fff
+
+			.order-price
+				background-color: #616161
+				display: flex
+				align-items: center
+				justify-content: space-between
+
+				.price
+					font-family: $price-font
+					color: #fff
+					display: flex
+					align-items: center
+
+					.valute
+						font-size: 32px
+						font-weight: bold
+						margin-left: 7px
+
+					.num
+						font-size: 64px
+						font-weight: bold
+						padding: 0 10px
+
+					.month
+						font-size: 25px
+						align-self: flex-end
+						margin-bottom: 10px
+
+				.order-btn
+					margin-right: 7px
+
+					a:link, a:visited
+						text-decoration: none
+						display: block
+						color: #616161;
+						background-color: #fff
+						font-size: 21px
+						text-shadow: 0 0 1px rgba(0, 0, 0, 0.06)
+						font-weight: bold
+						letter-spacing: 1px
+						padding: 7px
+						border-radius: 2px
+
+					a:hover
+						background-color: #eb4f4e
+						color: #fff
 
 
 
@@ -363,4 +474,4 @@ header
 
 
 .height
-	height: 700px
+	height: 500px
