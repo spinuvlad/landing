@@ -136,6 +136,10 @@ body {
   font-family: Bariol-Regular;
 }
 
+header {
+  overflow: hidden;
+}
+
 header .menu {
   background-color: #f66262;
   color: #fff;
@@ -516,7 +520,21 @@ header section.top-header .owl-carousel .owl-dots {
   margin-top: -130px;
 }
 
-.orders .container {
+.orders .wrapper .more {
+  display: block;
+  text-decoration: none;
+  padding: 30px;
+  font-size: 20px;
+  color: #eb4f4e;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.orders .wrapper .more:hover {
+  text-decoration: underline;
+}
+
+.orders .wrapper .container {
   display: flex;
   flex-wrap: wrap;
   margin-left: -5px;
@@ -525,27 +543,27 @@ header section.top-header .owl-carousel .owl-dots {
   align-items: flex-end;
 }
 
-.orders .container .order._mod .title {
+.orders .wrapper .container .order._mod .title {
   color: #eb4f4e;
 }
 
-.orders .container .order._mod .subtitle {
+.orders .wrapper .container .order._mod .subtitle {
   color: #232324;
 }
 
-.orders .container .order._mod .order-price {
+.orders .wrapper .container .order._mod .order-price {
   background-color: #eb4f4e;
 }
 
-.orders .container .order._mod .order-price .order-btn {
+.orders .wrapper .container .order._mod .order-price .order-btn {
   color: #eb4f4e;
 }
 
-.orders .container .order._mod .order-price .order-btn a:hover {
+.orders .wrapper .container .order._mod .order-price .order-btn a:hover {
   background-color: #616161;
 }
 
-.orders .container .order {
+.orders .wrapper .container .order {
   background-color: #fff;
   border-radius: 4px;
   box-sizing: border-box;
@@ -555,13 +573,13 @@ header section.top-header .owl-carousel .owl-dots {
   width: calc(33.333333333333336% - 10px);
 }
 
-.orders .container .order .title {
+.orders .wrapper .container .order .title {
   font-size: 40px;
   letter-spacing: 3px;
   padding: 10px 0;
 }
 
-.orders .container .order .subtitle {
+.orders .wrapper .container .order .subtitle {
   font-size: 20px;
   color: #eb4f4e;
   font-weight: bold;
@@ -569,70 +587,71 @@ header section.top-header .owl-carousel .owl-dots {
   padding-bottom: 20px;
 }
 
-.orders .container .order .order-menu {
+.orders .wrapper .container .order .order-menu {
   background-color: #f0f0f0;
   font-size: 18px;
 }
 
-.orders .container .order .order-menu li:not(:last-child) {
+.orders .wrapper .container .order .order-menu li:not(:last-child) {
   border-bottom: none;
 }
 
-.orders .container .order .order-menu li {
+.orders .wrapper .container .order .order-menu li {
   border: 1px solid silver;
 }
 
-.orders .container .order .order-menu li a:link,
-.orders .container .order .order-menu li a:visited {
+.orders .wrapper .container .order .order-menu li a:link,
+.orders .wrapper .container .order .order-menu li a:visited {
   text-decoration: none;
   padding: 10px;
   display: block;
   color: #616161;
+  transition: .3s;
 }
 
-.orders .container .order .order-menu li a:hover {
+.orders .wrapper .container .order .order-menu li a:hover {
   background-color: #616161;
   color: #fff;
 }
 
-.orders .container .order .order-price {
+.orders .wrapper .container .order .order-price {
   background-color: #616161;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.orders .container .order .order-price .price {
+.orders .wrapper .container .order .order-price .price {
   font-family: MyriadPro-Regular;
   color: #fff;
   display: flex;
   align-items: center;
 }
 
-.orders .container .order .order-price .price .valute {
+.orders .wrapper .container .order .order-price .price .valute {
   font-size: 32px;
   font-weight: bold;
   margin-left: 7px;
 }
 
-.orders .container .order .order-price .price .num {
+.orders .wrapper .container .order .order-price .price .num {
   font-size: 64px;
   font-weight: bold;
   padding: 0 10px;
 }
 
-.orders .container .order .order-price .price .month {
+.orders .wrapper .container .order .order-price .price .month {
   font-size: 25px;
   align-self: flex-end;
   margin-bottom: 10px;
 }
 
-.orders .container .order .order-price .order-btn {
+.orders .wrapper .container .order .order-price .order-btn {
   margin-right: 7px;
 }
 
-.orders .container .order .order-price .order-btn a:link,
-.orders .container .order .order-price .order-btn a:visited {
+.orders .wrapper .container .order .order-price .order-btn a:link,
+.orders .wrapper .container .order .order-price .order-btn a:visited {
   text-decoration: none;
   display: block;
   color: #616161;
@@ -643,11 +662,161 @@ header section.top-header .owl-carousel .owl-dots {
   letter-spacing: 1px;
   padding: 7px;
   border-radius: 2px;
+  transition: .3s;
 }
 
-.orders .container .order .order-price .order-btn a:hover {
+.orders .wrapper .container .order .order-price .order-btn a:hover {
   background-color: #eb4f4e;
   color: #fff;
+}
+
+.footer-slider {
+  background-color: #eb4f4e;
+  text-align: center;
+}
+
+.footer-slider-title {
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 7px;
+  font-weight: bold;
+  padding-top: 43px;
+}
+
+.footer-slider-subtitle {
+  padding: 15px;
+  color: #232324;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.footer-slider .fa {
+  font-size: 25px;
+  color: #fff;
+}
+
+.footer-slider p {
+  font-size: 21px;
+  line-height: 36px;
+  font-style: italic;
+  padding: 15px;
+  text-align: left;
+  color: #fff;
+}
+
+.footer-slider p a:link,
+.footer-slider p a:visited {
+  text-decoration: none;
+  color: #232324;
+}
+
+.footer-slider p a:hover {
+  text-decoration: underline;
+}
+
+.footer-slider .owl-nav .owl-prev {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  font-size: 4rem;
+  line-height: 30px;
+}
+
+.footer-slider .owl-nav .owl-next {
+  position: absolute;
+  right: 5%;
+  top: 45%;
+  font-size: 4rem;
+  line-height: 30px;
+}
+
+.footer-slider .owl-nav .fa {
+  background-color: black;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  line-height: 1.4;
+}
+
+.footer-about {
+  background-color: #232324;
+}
+
+.footer-about .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.footer-about .wrapper .footer-about-left {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  flex-grow: 1;
+}
+
+.footer-about .wrapper .footer-about-left span {
+  color: #eb4f4e;
+}
+
+.footer-about .wrapper .footer-about-right .social {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.footer-about .wrapper .footer-about-right .social a:link,
+.footer-about .wrapper .footer-about-right .social a:visited {
+  color: #fff;
+  display: block;
+  width: 15px;
+  padding: 5px;
+  margin: 5px;
+  background-color: #eb4f4e;
+  border-radius: 1px;
+  text-align: center;
+}
+
+.footer-map {
+  background: url("../img/map.png") no-repeat center;
+  background-size: 100%;
+  padding: 50px 0;
+}
+
+.footer-map-contact {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.03);
+  border-radius: 5px 4px 4px 5px;
+  background-color: rgba(35, 35, 36, 0.9);
+  max-width: 617px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer-map-contact .contact {
+  font-size: 30px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+  line-height: 44px;
+  color: #fff;
+}
+
+.footer-map-contact a:link,
+.footer-map-contact a:visited {
+  text-decoration: none;
+}
+
+.footer-map-contact .subtitle,
+.footer-map-contact a {
+  color: #eb4f4e;
+  line-height: 44px;
+  font-size: 20px;
 }
 
 .height {
@@ -713,8 +882,36 @@ header section.top-header .owl-carousel .owl-dots {
     width: calc(45.833333333333336% - 10px);
   }
 
-  .orders .container .order .title {
-    font-size: 32px;
+  .orders .wrapper .container .order .title {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .orders .wrapper .container .order .subtitle {
+    font-size: 16px;
+  }
+
+  .orders .wrapper .container .order .order-price .price .valute {
+    font-size: 20px;
+  }
+
+  .orders .wrapper .container .order .order-price .price .num {
+    font-size: 30px;
+    padding: 0 5px;
+  }
+
+  .orders .wrapper .container .order .order-price .price .month {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+
+  .orders .wrapper .container .order .order-price .order-btn a:link,
+  .orders .wrapper .container .order .order-price .order-btn a:visited {
+    margin: 7px 0;
+  }
+
+  .footer-slider .owl-nav .fa {
+    display: none;
   }
 }
 
@@ -778,6 +975,46 @@ header section.top-header .owl-carousel .owl-dots {
 
   .appl-title {
     font-size: 2rem;
+  }
+
+  .orders .wrapper .container .order {
+    width: calc(100% - 10px);
+  }
+
+  .orders .wrapper .container .order .title {
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
+
+  .orders .wrapper .container .order .subtitle {
+    font-size: 20px;
+  }
+
+  .orders .wrapper .container .order .order-price .price .valute {
+    font-size: 32px;
+  }
+
+  .orders .wrapper .container .order .order-price .price .num {
+    font-size: 64px;
+    padding: 0 10px;
+  }
+
+  .orders .wrapper .container .order .order-price .price .month {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .footer-slider-title {
+    font-size: 30px;
+  }
+
+  .footer-slider p {
+    font-size: 16px;
+  }
+
+  .footer-about .wrapper .footer-about-left {
+    font-size: 14px;
   }
 }
 

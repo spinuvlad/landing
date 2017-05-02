@@ -60,5 +60,30 @@ $('.slider-2').owlCarousel({
     }
 });
 
+$('.slider-3').owlCarousel({
+    loop:true,
+    nav:true,
+    margin:30,
+    autoplay:true,
+    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        500:{
+            items:1,
+            nav:true
+        },
+
+        800:{
+            items:1,
+            nav:true
+        },
+
+    }
+});
+
 });
 
