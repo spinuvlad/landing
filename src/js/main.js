@@ -16,7 +16,7 @@ $('.slider-1').owlCarousel({
     margin:10,
     autoplay:true,
     nav:true,
-    navText: ["<img src='../img/arrow-prev.png'>", "<img src='../img/arrow-next.png'>"],
+    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
     responsiveClass:true,
     responsive:{
         0:{

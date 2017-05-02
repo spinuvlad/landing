@@ -136,6 +136,10 @@ body {
   font-family: Bariol-Regular;
 }
 
+i {
+  font-family: fontawesome !important;
+}
+
 header {
   overflow: hidden;
 }
@@ -281,6 +285,10 @@ header section.top-header .owl-carousel {
 header section.top-header .owl-carousel img {
   max-width: 70%;
   margin: 0 auto;
+}
+
+header section.top-header .owl-carousel .owl-nav {
+  font-size: 40px;
 }
 
 header section.top-header .owl-carousel .owl-nav .owl-prev {
